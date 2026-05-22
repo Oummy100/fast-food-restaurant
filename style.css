@@ -1,13 +1,14 @@
 .bg-image {
-  background-image: url("images/hero-bg.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+ background-image: url("images/hero-bg.jpg");
+ 
+ background-size: cover;
 }
 
 .bg-image1 {
   background-image: url("images/hero-bg.jpg");
   background-size: cover;
   background-repeat: repeat;
+  transition: transform 0.4s ease;
 }
 
 .carousel-indicators button {
@@ -20,7 +21,6 @@
   flex: 0 0 auto;
 
   transition: transform 0.3s ease !important;
-  
 }
 
 .carousel-indicators button:hover {
@@ -35,24 +35,22 @@
 }
 
 .carouselInner {
-padding-left: 20rem !important;
-padding-top: 20rem;
+  padding-left: 20rem !important;
+  padding-top: 20rem;
 }
 
 .promotion {
-   width: 10rem !important;
-   height: 10rem !important;
-   border-radius: 50%;
-
+  width: 10rem !important;
+  height: 10rem !important;
+  border-radius: 50%;
 }
 
 .promotion1 {
-   transition: transform 0.3s ease !important;
-   
+  transition: transform 0.3s ease !important;
 }
 
 .promotion1:hover {
-   transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .borderRadius {
@@ -61,13 +59,78 @@ padding-top: 20rem;
 }
 
 .panier1 {
- width: 2rem !important;
+  width: 2rem !important;
   height: 2rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.circleArrow{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.carousel-control-next {
+  right: 50%;
+}
+
+.carousel-control-next {
+  right: 40%;
+}
+
+.carousel-control-prev {
+  left: 40%;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  top: 100%;
+}
+
+.socialMedia {
+  transition: 0.3s ease !important;
+}
+
+.socialMedia:hover {
+  color: rgb(255, 200, 0) !important;
+}
+
+@media (max-width: 768px) {
+  .carouselInner {
+    padding-left: 4rem !important;
+    padding-top: 15%;
+  }
+
+  .bg-image1 {
+    min-height: 70vh !important;
+  }
+  .carousel-indicators {
+    margin: 0 !important;
+    right: 75% !important;
+    top: 35rem !important;
+  }
+
+  .navbar-expand-md .navbar-toggler {
+    display: block !important;
+  }
+
+
+
+  .badges, .desapearTitle{
+    display: none !important;
+  }
+
+  .heighExpand{
+    height: 10vh !important;
+  }
+
+ #navbarSupportedContent.show ~ section.bg-image1 {
+  transform: scale(1.05);
+}
+
+.bg-image {
+background-size: auto;
+}
+
+.cardPromo{
+  flex-direction: column !important;
+  text-align: center;
+}
+  
 }
