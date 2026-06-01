@@ -55,7 +55,7 @@
 
 .borderRadius {
   border-radius: 15px 15px 0 40px !important;
-  background: rgb(233, 233, 233);
+  background: rgb(233, 233, 233); 
 }
 
 .panier1 {
@@ -91,6 +91,28 @@
   color: rgb(255, 200, 0) !important;
 }
 
+
+@media (max-width: 1440px) {
+   .carousel-indicators {
+    right: 52% !important;
+  }
+
+  @media (max-width: 1024px) {
+   .carousel-indicators {
+    right: 80% !important;
+  }
+
+   .carouselInner {
+    padding-left: 5rem !important;
+    padding-top: 20%;
+  }
+
+ .bg-image1 {
+    min-height: 70vh !important;
+  }
+}
+}
+
 @media (max-width: 768px) {
   .carouselInner {
     padding-left: 4rem !important;
@@ -98,12 +120,12 @@
   }
 
   .bg-image1 {
-    min-height: 70vh !important;
+    min-height: 57vh !important;
   }
   .carousel-indicators {
     margin: 0 !important;
     right: 75% !important;
-    top: 35rem !important;
+    top: 30rem !important;
   }
 
   .navbar-expand-md .navbar-toggler {
