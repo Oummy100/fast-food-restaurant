@@ -2,13 +2,52 @@
  background-image: url("images/hero-bg.jpg");
  
  background-size: cover;
+
 }
 
 .bg-image1 {
   background-image: url("images/hero-bg.jpg");
   background-size: cover;
   background-repeat: repeat;
-  transition: transform 0.4s ease;
+  transition: background-size 0.5s ease;
+  height: 100vh;
+}
+
+.navbar-toggler {
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+
+.line {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background: white;
+  margin: 5px auto;
+  transition: all 0.3s ease;
+}
+
+
+.navbar-toggler[aria-expanded="true"] .line:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.navbar-toggler[aria-expanded="true"] .line:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler[aria-expanded="true"] .line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.navbar-toggler {
+  border-radius: 50%;
+  transition: all 0.4s ease;
+}
+
+.navbar-toggler[aria-expanded="true"] {
+  background: rgba(255,255,255,0.15);
 }
 
 .carousel-indicators button {
@@ -58,16 +97,16 @@
   background: rgb(233, 233, 233); 
 }
 
+.borderRadius img{
+  height:11rem !important;
+}
+
 .panier1 {
   width: 2rem !important;
   height: 2rem !important;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.carousel-control-next {
-  right: 50%;
 }
 
 .carousel-control-next {
@@ -102,18 +141,54 @@
     right: 80% !important;
   }
 
-   .carouselInner {
-    padding-left: 5rem !important;
-    padding-top: 20%;
-  }
+.carouselInner {
+  padding-left: 5rem !important;
+  padding-top: 20rem;
+}
 
  .bg-image1 {
     min-height: 70vh !important;
   }
+  .borderRadius img{
+  height:10rem !important;
+}
+}
+}
+@media (max-width: 1024px) {
+  .bg-image1 {
+  background-image: url("images/hero-bg.jpg");
+  background-size: auto;
+  background-position: center;
+  
+  
+}
+
+.carousel-indicators {
+  margin: 0 !important;
+  right: 77% !important;
+  top: 40rem !important;
+}
+
+.carouselInner {
+  padding-left: 5rem !important;
+  padding-top: 15rem;
+}
+
+  .borderRadius img{
+  height:9rem !important;
 }
 }
 
 @media (max-width: 768px) {
+
+  .bg-image1 {
+  background-image: url("images/hero-bg.jpg");
+  background-size: cover;
+  background-repeat: repeat;
+  transition: transform 0.2s ease-out;
+  height: 50vh;
+}
+
   .carouselInner {
     padding-left: 4rem !important;
     padding-top: 15%;
@@ -142,10 +217,6 @@
     height: 10vh !important;
   }
 
- #navbarSupportedContent.show ~ section.bg-image1 {
-  transform: scale(1.05);
-}
-
 .bg-image {
 background-size: auto;
 }
@@ -154,5 +225,67 @@ background-size: auto;
   flex-direction: column !important;
   text-align: center;
 }
-  
+.testimonials .img{
+  width: 40% !important;
+}
+
+body:has(#navbarSupportedContent.show) .bg-image1 {
+  background-size: unset;
+}
+
+}
+
+@media (max-width: 425px) {
+.aboutUs{
+  flex-direction: column !important;
+  text-align: center;
+  flex-direction: column-reverse !important;
+}
+
+.aboutUs img{
+  width: 120% !important;
+  margin-top: 2rem !important;
+}
+
+.colCenter{
+  text-align: start;
+}
+
+.contactUs{
+  flex-direction: column !important;
+ gap: 1rem;
+}
+
+.contactUs iframe{
+  width: 100% !important;
+  height: 350px !important;
+
+}
+
+.testimonials .img{
+  width: 75% !important;
+}
+
+.carousel-control-next {
+  right: 35%;
+}
+
+.carousel-control-prev {
+  left: 35%;
+}
+
+.carousel-indicators {
+  right: 75% !important;
+  top: 25rem !important;
+}
+
+.bg-image1 p{
+  font-size: 1.2rem !important;
+  width: 100% !important;
+}
+
+.carouselInner {
+        padding-left: 1rem !important;
+        padding-top: 15%;
+    }
 }
