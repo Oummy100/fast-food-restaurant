@@ -5,12 +5,35 @@
 
 }
 
+h1{
+   font-family: "Dancing Script", cursive;
+}
+
+.h1{
+   font-family: "Dancing Script", cursive;
+}
+
+
 .bg-image1 {
   background-image: url("images/hero-bg.jpg");
   background-size: cover;
-  background-repeat: repeat;
-  transition: background-size 0.5s ease;
+  background-repeat: no-repeat;
+  background-position: center;
   height: 100vh;
+}
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 70%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tesimonial{
+  margin-bottom: 5rem;
 }
 
 .navbar-toggler {
@@ -160,7 +183,6 @@
   background-size: auto;
   background-position: center;
   
-  
 }
 
 .carousel-indicators {
@@ -177,6 +199,16 @@
   .borderRadius img{
   height:9rem !important;
 }
+
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 90%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
 }
 
 @media (max-width: 768px) {
@@ -185,8 +217,9 @@
   background-image: url("images/hero-bg.jpg");
   background-size: cover;
   background-repeat: repeat;
-  transition: transform 0.2s ease-out;
+  transition: transform 0.2s ease;
   height: 50vh;
+  
 }
 
   .carouselInner {
@@ -207,6 +240,23 @@
     display: block !important;
   }
 
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 95%;
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+
+  .carousel-control-next {
+  right: 38%;
+}
+
+.carousel-control-prev {
+  left: 38%;
+}
 
 
   .badges, .desapearTitle{
