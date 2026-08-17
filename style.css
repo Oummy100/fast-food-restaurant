@@ -90,13 +90,13 @@ h1{
 
 .carousel-indicators {
   margin: 0 !important;
-  right: 66% !important;
+  right: 58% !important;
   top: 40rem !important;
 }
 
 .carouselInner {
-  padding-left: 20rem !important;
-  padding-top: 20rem;
+  padding-left: 20% !important;
+  padding-top: 20%;
 }
 
 .promotion {
