@@ -1,8 +1,16 @@
 .ContactUs{
-    height: 52vh !important;
+   padding-top: 10rem !important;
+   padding-bottom: 10rem !important;
 }
 
 .bg-image {
  background-image: url("../images/hero-bg.jpg");
  background-size: cover;
+}
+
+@media (max-width: 425px){
+    .ContactUs{
+   padding-top: 0rem !important;
+   padding-bottom: 0rem !important;
+}
 }
